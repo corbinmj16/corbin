@@ -51,7 +51,9 @@ export default function Home() {
       <footer className={styles.footer}>
         <ul>
           <li>LinkedIn</li>
-          <li>Email</li>
+          <li>
+            <a href="mailto:contact.corbinjensen@gmail.com">Email</a>
+          </li>
           <li>Github</li>
         </ul>
         <p>Corbin Jensen 2021</p>
