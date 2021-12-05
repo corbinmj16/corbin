@@ -1,0 +1,67 @@
+.project-wrap {
+  background: $black;
+  margin-top: 200px;
+  padding: 100px 0 50px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: -250px;
+  
+  @include tabletAndDesktop() {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: $white;
+  margin: 0 auto;
+
+  @include tabletAndDesktop() {
+    flex: 1;
+  }
+
+  &__image {
+    height: 305px;
+    background: $gradient;
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+  }
+
+  &__category {
+    margin: 0;
+    display: inline-block;
+    align-self: flex-start;
+  }
+
+  &__title {
+    color: $black;
+    margin-top: 10px;
+  }
+
+  &__desc {}
+
+  &__link {
+    margin-top: auto;
+    margin-left: auto;
+  }
+}
+

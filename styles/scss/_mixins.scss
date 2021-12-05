@@ -1,0 +1,15 @@
+// Breakpoints
+$tablet-min: 768px;
+
+@mixin tabletAndDesktop () {
+  @media(min-width: $tablet-min) {
+    @content;
+  }
+}
+
+@mixin fontGradient() {
+  display: inline-block;
+  background-image: $gradient;
+  background-clip: text;
+  color: transparent;
+}

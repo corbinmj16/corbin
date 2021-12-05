@@ -1,0 +1,48 @@
+button {
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn {
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    .btn__bg {
+      transform: translate(0px, -20px);
+    }
+  }
+  
+  &__text {
+    position: relative;
+    padding: 20px 30px;
+    background-color: $black;
+    color: $white;
+    z-index: 1;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding: 30px;
+    background-image: $gradient;
+    transform: translate(7px, -10px);
+    transition: transform .2s linear;
+  }
+}
+
+.btn-alt {
+  padding: 20px 30px;
+
+  &:after {
+    content: ' -->'
+  }
+}

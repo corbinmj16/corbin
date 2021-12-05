@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;700&display=swap');
+
+$font: 'Outfit', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #000;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  
+  @include tabletAndDesktop() {
+    font-size: 75px;
+    line-height: 110%;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  
+  @include tabletAndDesktop() {
+    font-size: 54px;
+    line-height: 110%;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  
+  @include tabletAndDesktop() {
+    font-size: 36px;
+    line-height: 100%;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  
+  @include tabletAndDesktop() {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  
+  @include tabletAndDesktop() {
+    font-size: 24px;
+    line-height: 110%;
+  }
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+}

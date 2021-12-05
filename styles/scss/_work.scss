@@ -1,0 +1,56 @@
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 50px auto;
+}
+
+.work-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 100%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $gray;
+  margin: 0 auto 20px;
+
+  &:hover {
+    .work-item__border {
+      width: 100%;
+    }
+  }
+  
+  &__border {
+    width: 0;
+    height: 2px;
+    background: $gradient;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width .3s linear;
+  }
+
+  &__logo {
+    width: 100px;
+  }
+
+  &__content {
+    margin-left: 20px;
+  }
+
+  &__company {
+    font-size: 24px;
+    font-weight: bold;
+    color: $black;
+    margin: 0;
+  }
+
+  &__dates {
+    margin: 0;
+  }
+
+  &__job {
+    margin: 0;
+  }
+}
