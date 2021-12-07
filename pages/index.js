@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import heroImg from '../public/hero_bg.png'
-import { IconClose, IconMenu } from '../components'
+import { IconClose, IconMenu, Favicons } from '../components'
 
 export default function Home() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,12 +11,26 @@ export default function Home() {
     setIsNavOpen(!isNavOpen);
   }
 
+  const setupAnalytics = () => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments)}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4YCFJVTCZR');
+  }
+
+  useEffect(() => {
+    setupAnalytics();
+  }, [])
+
   return (
     <div>
       <Head>
         <title>Corbin Jensen Portfolio</title>
         <meta name="description" content="Corbin Jensen is a Frontend Developer and this is his portfolio website." />
-        <link rel="icon" href="/favicon.ico" />
+        <Favicons />
+        // Global site tag (gtag.js) - Google Analytics
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YCFJVTCZR"></script>
       </Head>
 
       <header>
@@ -61,8 +75,7 @@ export default function Home() {
             </p>
             <div className="hero__buttons">
               <a href="#projects" className="btn no-underline">
-                <span className="btn__text">Projects</span>
-                <span className="btn__bg"></span>
+                Projects
               </a>
               <a
                 href="corbin-jensen-resume.pdf"

@@ -35,6 +35,10 @@
   
   &.active {
     top: 50px;
+
+    @include tabletAndDesktop() {
+      top: 0;
+    }
   }
   
   @include tabletAndDesktop {
