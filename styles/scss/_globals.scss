@@ -4,7 +4,7 @@
 
 .container {
   width: calc(100% - 40px);
-  max-width: 1215px;
+  max-width: $content-max-width;
   margin: 0 auto;
 }
 

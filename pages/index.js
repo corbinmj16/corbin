@@ -1,8 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import heroImg from '../public/hero_bg.png'
+import { IconClose, IconMenu } from '../components'
 
 export default function Home() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  }
+
   return (
     <div>
       <Head>
@@ -14,19 +22,28 @@ export default function Home() {
       <header>
         <nav className="nav-wrap container">
           <h5 className="nav-logo">Corbin Jensen</h5>
+          <button
+            onClick={toggleNav}
+            className={`nav-mobile-btn ${isNavOpen ? 'active' : ''}`}>
+            {isNavOpen ? <IconClose /> : <IconMenu />}
+          </button>
 
-          <ul className="nav">
+          <ul className={`nav ${isNavOpen ? 'active' : ''}`}>
             <li className="nav__item">
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={toggleNav}>Skills</a>
             </li>
             <li className="nav__item">
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={toggleNav}>Projects</a>
             </li>
             <li className="nav__item">
-              <a href="#about">About</a>
+              <a href="#about" onClick={toggleNav}>About</a>
             </li>
             <li className="nav__item">
-              <a href="corbin-jensen-resume.pdf" target="_blank" download>Resume</a>
+              <a
+                href="corbin-jensen-resume.pdf"
+                onClick={toggleNav}
+                target="_blank"
+                download>Resume</a>
             </li>
           </ul>
         </nav>
