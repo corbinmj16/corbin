@@ -1,8 +1,20 @@
 // Breakpoints
 $tablet-min: 768px;
+$desktop-min: 1020px;
+$large-mobile-min: 400px;
 
+@mixin largeMobile () {
+  @media(min-width: $large-mobile-min) {
+    @content;
+  }
+}
 @mixin tabletAndDesktop () {
   @media(min-width: $tablet-min) {
+    @content;
+  }
+}
+@mixin desktop () {
+  @media(min-width: $desktop-min) {
     @content;
   }
 }

@@ -1,19 +1,28 @@
 .work {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px 0;
   list-style: none;
   padding: 0;
   margin: 50px auto;
+  
+  @include desktop() {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 .work-item {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex: 100%;
   padding-bottom: 20px;
   border-bottom: 2px solid $gray;
-  margin: 0 auto 20px;
+
+  @include largeMobile() {
+    flex-direction: row;
+  }
 
   &:hover {
     .work-item__border {
@@ -33,17 +42,38 @@
 
   &__logo {
     width: 100px;
+    margin-bottom: 20px;
+    
+    @include largeMobile() {
+      margin-bottom: 0;
+    }
   }
 
   &__content {
     margin-left: 20px;
+    width: 100%;
+
+    ul {
+      padding: 0;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        @include tabletAndDesktop() {
+          flex-direction: row;
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 
   &__company {
     font-size: 24px;
     font-weight: bold;
     color: $black;
-    margin: 0;
+    margin: 0 0 12px;
   }
 
   &__dates {
@@ -52,5 +82,21 @@
 
   &__job {
     margin: 0;
+    
+    @include tabletAndDesktop() {
+      margin: 0 15px 15px 0;
+    }
+  }
+
+  &__link {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      @include fontGradient();
+    }
   }
 }

@@ -25,8 +25,12 @@
       margin-right: 0;
     }
 
-    &:hover {
-      color: $gray;
+    a {
+      text-decoration: none;
+
+      &:hover {
+        @include fontGradient();
+      }
     }
   }
 }

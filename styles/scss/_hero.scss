@@ -6,7 +6,6 @@
   margin: 50px auto 0;
   
   @include tabletAndDesktop() {
-    // justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -17,17 +16,49 @@
   &__content {
     align-self: flex-start;
     flex: 1;
+    margin-bottom: 50px;
+
+    @include tabletAndDesktop() {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
-      font-size: 40px;
-      text-align: left;
-      width: 100%;
-      max-width: 850px;
-      color: #000;
-      
-      @include tabletAndDesktop() {
-        font-size: 65px;
-      }
+    font-size: 40px;
+    text-align: left;
+    width: 100%;
+    max-width: 850px;
+    color: #000;
+    
+    @include tabletAndDesktop() {
+      font-size: 65px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    @include largeMobile() {
+      flex-direction: row;
+    }
+
+    @include tabletAndDesktop() {
+      flex-direction: row;
+    }
+  }
+
+  &__download {
+    color: $black;
+    display: inline-block;
+    
+    &:hover {
+      @include fontGradient();
+    }
+    
+    @include largeMobile() {
+      margin-left: 30px;
+    }
   }
 }

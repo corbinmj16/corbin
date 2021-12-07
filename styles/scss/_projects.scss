@@ -59,9 +59,21 @@
 
   &__desc {}
 
-  &__link {
+  &__buttons {
     margin-top: auto;
     margin-left: auto;
+  }
+
+  &__link {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      @include fontGradient();
+    }
   }
 }
 

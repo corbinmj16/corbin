@@ -11,49 +11,59 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="nav-wrap container">
-        <h5 className="nav-logo font-gradient">Corbin Jensen</h5>
+      <header>
+        <nav className="nav-wrap container">
+          <h5 className="nav-logo">Corbin Jensen</h5>
 
-        <ul className="nav">
-          <li className="nav__item">Skills</li>
-          <li className="nav__item">Projects</li>
-          <li className="nav__item">About</li>
-          <li className="nav__item">Resume</li>
-        </ul>
-      </nav>
+          <ul className="nav">
+            <li className="nav__item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="nav__item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="nav__item">
+              <a href="#about">About</a>
+            </li>
+            <li className="nav__item">
+              <a href="corbin-jensen-resume.pdf" target="_blank" download>Resume</a>
+            </li>
+          </ul>
+        </nav>
 
-      <section className="hero container">
-        <div className="hero__content">
-          <h1 className="hero__title">
-            <span className="font-gradient">I'm a frontend developer</span> with 8+
-            years experience.
-          </h1>
-          <p>
-            Hi! I'm Corbin and I enjoy developing tools that make getting things
-            done easier. My programming language of choice is Javascript and
-            framework of choice React.
-          </p>
-          <div className="hero__buttons">
-            <button className="btn">
-              <span className="btn__text">Projects</span>
-              <span className="btn__bg"></span>
-            </button>
-            <a
-              href="corbin-jensen-resume.pdf"
-              download
-              target="_blank"
-              className="btn-alt">Download Resume</a>
+        <section className="hero container">
+          <div className="hero__content">
+            <h1 className="hero__title">
+              <span className="font-gradient">I'm a frontend developer</span> with 8+
+              years experience.
+            </h1>
+            <p>
+              Hi! I'm Corbin and I enjoy developing tools that make getting things
+              done easier. My programming language of choice is Javascript and
+              framework of choice React.
+            </p>
+            <div className="hero__buttons">
+              <a href="#projects" className="btn no-underline">
+                <span className="btn__text">Projects</span>
+                <span className="btn__bg"></span>
+              </a>
+              <a
+                href="corbin-jensen-resume.pdf"
+                download
+                target="_blank"
+                className="hero__download btn-alt">Download Resume</a>
+            </div>
           </div>
-        </div>
 
-        <Image
-          className="hero__img"
-          src={heroImg}
-          objectFit="contain"
-          alt="Corbin Jensen" />
-      </section>
+          <Image
+            className="hero__img"
+            src={heroImg}
+            objectFit="contain"
+            alt="Corbin Jensen" />
+        </section>
+      </header>
 
-      <section className="skills container">
+      <section id="skills" className="skills container">
         <div className="skills__header">
           <h4 className="font-gradient section-subtitle">Skills</h4>
           <h2 className="section-title">Frontend is my specialty,<br />but dangerous enough on the backend.</h2>
@@ -90,7 +100,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="section">
+      <section id="projects" className="section">
         <div className="container">
           <h4 className="font-gradient section-subtitle">Projects</h4>
           <h2 className="section-title">Collaboration<br />Development<br />Problem Solving</h2>
@@ -106,7 +116,9 @@ export default function Home() {
                 <h5 className="font-gradient section-subtitle project__category">Freelance</h5>
                 <h3 className="project__title">Steel Virtue Group</h3>
                 <p className="project__desc">This was a freelance project for a guns and ammo dealer. I used their 3rd party inventory management API to populate the website with their products. This was built with React/Next.js.</p>
-                <a className="project__link" href="https://github.com/corbinmj16/steel-virtue-website" target="_blank">Github</a>
+                <div className="project__buttons">
+                  <a className="project__link" href="https://github.com/corbinmj16/steel-virtue-website" target="_blank">Github</a>
+                </div>
               </div>
             </li>
             <li className="project">
@@ -117,7 +129,9 @@ export default function Home() {
                 <h5 className="font-gradient project__category">Career</h5>
                 <h3 className="project__title">Physician Finder</h3>
                 <p className="project__desc">I was apart of a team that built the frontend of this tool. It was built with Vue.js. Web accessibility was a huge factor with this project and I learned so much doing it.</p>
-                <a className="project__link" href="https://www.novanthealth.org/pf/" target="_blank">Website</a>
+                <div className="project__buttons">
+                  <a className="project__link" href="https://www.novanthealth.org/pf/" target="_blank">Website</a>
+                </div>
               </div>
             </li>
             <li className="project">
@@ -127,13 +141,16 @@ export default function Home() {
               <div className="project__content">
                 <h5 className="font-gradient project__category">Freelance</h5>
                 <h3 className="project__title">Calvery Chapel Fortmill</h3>
-                <p className="project__desc">I’m rebuilding this for my church. It has a Wordpress backend and I’m utilizing the Wordpress API to populate the frontend. The frontend is built with a React/Next.js.</p>
-                <a className="project__link" href="https://github.com/corbinmj16/ccfortmill" target="_blank">Github</a>
+                <p className="project__desc">I’m currently rebuilding this for my church. It has a Wordpress backend and I’m utilizing the Wordpress API to populate the frontend. The frontend is built with a React/Next.js. You can see the progress by visiting the staging site below.</p>
+                <div className="project__buttons">
+                  <a className="project__link" href="https://github.com/corbinmj16/ccfortmill" target="_blank">Github</a>
+                  <a className="project__link" href="https://ccfortmill.vercel.app/" target="_blank">Website</a>
+                </div>
               </div>
             </li>
           </ul>
 
-          <div className="about container">
+          <div id="about" className="about container">
             <div className="about__title">
               <h4 className="font-gradient">Frontend Developer</h4>
               <h2>That's me!</h2>
@@ -146,47 +163,84 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section work-experience">
+      <section id="work" className="section work-experience">
         <div className="container">
           <h2>💼 Work Experience</h2>
           <ul className="work">
             <li className="work-item">
-              <img className="work-item__logo" src="https://www.clipartmax.com/png/full/39-396725_fakery-logo-fake-company-logo-transparent.png" />
+              <img className="work-item__logo" src="rv_logo.jpg" />
               <div className="work-item__content">
                 <h4 className="work-item__company">Red Ventures</h4>
-                <p className="work-item__job">Senior Frontend Developer</p>
-                <p className="work-item__dates">2018 - Current</p>
-                <p className="work-item__job">Frontend Developer</p>
-                <p className="work-item__dates">2017-2021</p>
-                <a className="work-item__link" href="#">LinkedIn</a>
-                <a className="work-item__link" href="https://www.redventures.com/" target="_blank">Website</a>
+                <ul>
+                  <li>
+                    <p className="work-item__job">Senior Frontend Developer</p>
+                    <p className="work-item__dates">2018 - Current</p>
+                  </li>
+                  <li>
+                    <p className="work-item__job">Frontend Developer</p>
+                    <p className="work-item__dates">2017-2021</p>
+                  </li>
+                </ul>
+                <div className="work-item__buttons">
+                  <a className="work-item__link" href="https://www.linkedin.com/company/red-ventures/mycompany/" target="_blank">LinkedIn</a>
+                  <a className="work-item__link" href="https://www.redventures.com/" 
+                  target="_blank">Website</a>
+                </div>
               </div>
               <span className="work-item__border"></span>
             </li>
             <li className="work-item">
-              <img className="work-item__logo" src="https://www.clipartmax.com/png/full/39-396725_fakery-logo-fake-company-logo-transparent.png" />
+              <img className="work-item__logo" src="carbonhouse_logo.jpg" />
               <div className="work-item__content">
                 <h4 className="work-item__company">Carbonhouse</h4>
-                <p className="work-item__job">Frontend Developer</p>
-                <p className="work-item__dates">2016 - 2017</p>
-                <a className="work-item__link" href="#">LinkedIn</a>
-                <a className="work-item__link" href="https://www.carbonhouse.com/" target="_blank">Website</a>
+                <ul>
+                  <li>
+                    <p className="work-item__job">Frontend Developer</p>
+                    <p className="work-item__dates">2016 - 2017</p>
+                  </li>
+                </ul>
+                <div className="work-item__buttons">
+                  <a className="work-item__link" href="https://www.linkedin.com/company/carbonhouse-inc./">LinkedIn</a>
+                  <a className="work-item__link" href="https://www.carbonhouse.com/" target="_blank">Website</a>
+                </div>
               </div>
               <span className="work-item__border"></span>
             </li>
             <li className="work-item">
-              <img className="work-item__logo" src="https://www.clipartmax.com/png/full/39-396725_fakery-logo-fake-company-logo-transparent.png" />
+              <img className="work-item__logo" src="tag_logo.jpg" />
               <div className="work-item__content">
                 <h4 className="work-item__company">TAG</h4>
-                <p className="work-item__job">Web Developer</p>
-                <p className="work-item__dates">2014 - 2016</p>
-                <a className="work-item__link" href="#">LinkedIn</a>
-                <a
-                  className="work-item__link"
-                  href="https://tagteamagency.com/"
-                  target="_blank">
+                <ul>
+                  <li>
+                    <p className="work-item__job">Web Developer</p>
+                    <p className="work-item__dates">2014 - 2016</p>
+                  </li>
+                </ul>
+                <div className="work-item__buttons">
+                  <a className="work-item__link" href="https://www.linkedin.com/company/tag-communications/" target="_blank">LinkedIn</a>
+                  <a className="work-item__link" href="https://tagteamagency.com/" target="_blank">
                     Website
-                </a>
+                  </a>
+                </div>
+              </div>
+              <span className="work-item__border"></span>
+            </li>
+            <li className="work-item">
+              <img className="work-item__logo" src="lee_logo.jpg" />
+              <div className="work-item__content">
+                <h4 className="work-item__company">Lee Enterprise</h4>
+                <ul>
+                  <li>
+                    <p className="work-item__job">Web Developer</p>
+                    <p className="work-item__dates">2013 - 2014</p>
+                  </li>
+                </ul>
+                <div className="work-item__buttons">
+                  <a className="work-item__link" href="https://www.linkedin.com/company/lee-enterprises/" target="_blank">LinkedIn</a>
+                  <a className="work-item__link" href="https://lee.net/" target="_blank">
+                    Website
+                  </a>
+                </div>
               </div>
               <span className="work-item__border"></span>
             </li>
@@ -198,7 +252,7 @@ export default function Home() {
         <div className="container">
           <h2 className="footer__cta">
             Ready to shoot me an email?<br />
-            <a className="font-gradient no-underline" href="mailto:contact.corbinjensen@gmail.com">Shoot it here!</a><br />
+            <a className="font-gradient" href="mailto:contact.corbinjensen@gmail.com">Shoot it here!</a><br />
           </h2>
         </div>
       </footer>
