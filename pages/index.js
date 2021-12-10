@@ -187,7 +187,7 @@ export default function Home() {
                 <h3 className="project__title">Healthline</h3>
                 <p className="project__desc">Led frontend team in planning, development and deployment of a new health education product. This resulted in acquiring 12,000+ new users in the first 2 months. This was built with React, Tailwind CSS, Next.js.</p>
                 <div className="project__buttons">
-                  <a className="project__link" href="www.healthline.com" target="_blank">Website</a>
+                  <a className="project__link" href="https://www.healthline.com" target="_blank">Website</a>
                 </div>
               </div>
             </li>
