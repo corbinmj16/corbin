@@ -14,7 +14,7 @@
   margin-top: -250px;
   
   @include tabletAndDesktop() {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 
@@ -35,7 +35,7 @@
     height: 305px;
     background: $gradient;
     background-position: center;
-    background-size: 55%;
+    background-size: 45%;
     background-repeat: no-repeat;
   }
 

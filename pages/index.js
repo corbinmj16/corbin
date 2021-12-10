@@ -178,6 +178,19 @@ export default function Home() {
                 </div>
               </div>
             </li>
+            <li className="project">
+              <div
+                className="project__image"
+                style={{backgroundImage: `url('hl_logo.jpg'); background-color: #fff`}}></div>
+              <div className="project__content">
+                <h5 className="font-gradient project__category">Career</h5>
+                <h3 className="project__title">Healthline</h3>
+                <p className="project__desc">Led frontend team in planning, development and deployment of a new health education product. This resulted in acquiring 12,000+ new users in the first 2 months. This was built with React, Tailwind CSS, Next.js.</p>
+                <div className="project__buttons">
+                  <a className="project__link" href="www.healthline.com" target="_blank">Website</a>
+                </div>
+              </div>
+            </li>
           </ul>
 
           <div id="about" className="about container">
