@@ -1,3 +1,9 @@
 export { IconMenu } from "./IconMenu";
 export { IconClose } from "./IconClose";
 export { Favicons } from "./Favicons";
+export { Hero } from "./Hero";
+export { SkillsSection } from "./SkillsSection";
+export { ProjectSection } from "./ProjectSection";
+export { AboutMe } from "./AboutMe";
+export { WorkSection } from "./WorkSection";
+export { Footer } from "./Footer";
