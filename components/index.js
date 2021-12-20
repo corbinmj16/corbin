@@ -7,3 +7,4 @@ export { ProjectSection } from "./ProjectSection";
 export { AboutMe } from "./AboutMe";
 export { WorkSection } from "./WorkSection";
 export { Footer } from "./Footer";
+export { Navigation } from "./Navigation";

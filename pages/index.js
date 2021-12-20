@@ -1,23 +1,17 @@
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import NavContext from '../context/NavContext'
 import {
-  IconClose,
-  IconMenu,
   Favicons,
   Hero,
   SkillsSection,
   ProjectSection,
   WorkSection,
   Footer,
+  Navigation,
 } from '../components'
 
 export default function Home() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  }
-
   const setupAnalytics = () => {
     window.dataLayer = window.dataLayer || [];
     function gtag(){window.dataLayer.push(arguments)}
@@ -41,40 +35,14 @@ export default function Home() {
       </Head>
 
       <header>
-        <nav className="nav-wrap container">
-          <h5 className="nav-logo">Corbin Jensen</h5>
-          <button
-            onClick={toggleNav}
-            className={`nav-mobile-btn ${isNavOpen ? 'active' : ''}`}>
-            {isNavOpen ? <IconClose /> : <IconMenu />}
-          </button>
-
-          <ul className={`nav ${isNavOpen ? 'active' : ''}`}>
-            <li className="nav__item">
-              <a href="#skills" onClick={toggleNav}>Skills</a>
-            </li>
-            <li className="nav__item">
-              <a href="#projects" onClick={toggleNav}>Projects</a>
-            </li>
-            <li className="nav__item">
-              <a href="#about" onClick={toggleNav}>About</a>
-            </li>
-            <li className="nav__item">
-              <a
-                href="corbin-jensen-resume.pdf"
-                onClick={toggleNav}
-                target="_blank"
-                download>Resume</a>
-            </li>
-          </ul>
-        </nav>
-
+        <Navigation />
         <Hero />
       </header>
 
       <SkillsSection />
       <ProjectSection />
       <WorkSection />
+
       <Footer />
     </div>
   )
