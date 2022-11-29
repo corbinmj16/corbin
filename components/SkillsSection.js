@@ -9,11 +9,10 @@ export function SkillsSection() {
         <li className="skills-item">
           <h4>💻<br /> Development</h4>
           <ul>
-            <li>HTML</li>
-            <li>CSS/SCSS</li>
-            <li>Javascript/Typescript</li>
+            <li>HTML, CSS/SCSS, Javascript</li>
+            <li>Typescript</li>
             <li>React & Vue.js</li>
-            <li>Wordpress</li>
+            <li>Laravel/PHP</li>
           </ul>
         </li>
         <li className="skills-item">
