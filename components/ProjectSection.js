@@ -43,10 +43,9 @@ export function ProjectSection() {
             <div className="project__content">
               <h5 className="font-gradient project__category">Freelance</h5>
               <h3 className="project__title">Calvery Chapel Fortmill</h3>
-              <p className="project__desc">I’m currently rebuilding this for my church. It has a Wordpress backend and I’m utilizing the Wordpress API to populate the frontend. The frontend is built with a React/Next.js. You can see the progress by visiting the staging site below.</p>
+              <p className="project__desc">I designed and rebuilt this for my church. It's a Wordpress website that uses the Elementor Page Builder.</p>
               <div className="project__buttons">
-                <a className="project__link" href="https://github.com/corbinmj16/ccfortmill" target="_blank">Github</a>
-                <a className="project__link" href="https://ccfortmill.vercel.app/" target="_blank">Website</a>
+                <a className="project__link" href="https://ccfortmill.com" target="_blank">Website</a>
               </div>
             </div>
           </li>
