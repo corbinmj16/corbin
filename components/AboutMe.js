@@ -2,7 +2,7 @@ export function AboutMe() {
   return (
     <div id="about" className="about container">
       <div className="about__title">
-        <h4 className="font-gradient">Frontend Developer</h4>
+        <h4 className="font-gradient">Senior Frontend Developer</h4>
         <h2>That's me!</h2>
       </div>
 

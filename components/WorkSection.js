@@ -5,23 +5,41 @@ export function WorkSection() {
         <h2>💼 Work Experience</h2>
         <ul className="work">
           <li className="work-item">
+            <img className="work-item__logo" src="Alto.svg" style={{ backgroundColor: '#0c6b5b' }}/>
+            <div className="work-item__content">
+              <h4 className="work-item__company">Alto</h4>
+              <ul>
+                <li>
+                  <p className="work-item__job">Senior Software Engineer</p>
+                  <p className="work-item__dates">Feb. 2022 - May 2023</p>
+                </li>
+              </ul>
+              <div className="work-item__buttons">
+                <a className="work-item__link" href="https://www.linkedin.com/company/altoira/mycompany/" target="_blank">LinkedIn</a>
+                <a className="work-item__link" href="https://www.altoira.com/"
+                  target="_blank">Website</a>
+              </div>
+            </div>
+            <span className="work-item__border"></span>
+          </li>
+          <li className="work-item">
             <img className="work-item__logo" src="rv_logo.jpg" />
             <div className="work-item__content">
               <h4 className="work-item__company">Red Ventures</h4>
               <ul>
                 <li>
                   <p className="work-item__job">Senior Frontend Developer</p>
-                  <p className="work-item__dates">2018 - Current</p>
+                  <p className="work-item__dates">Aug 2021 - Feb. 2022</p>
                 </li>
                 <li>
                   <p className="work-item__job">Frontend Developer</p>
-                  <p className="work-item__dates">2017-2021</p>
+                  <p className="work-item__dates">Nov. 2017 - Aug. 2021</p>
                 </li>
               </ul>
               <div className="work-item__buttons">
                 <a className="work-item__link" href="https://www.linkedin.com/company/red-ventures/mycompany/" target="_blank">LinkedIn</a>
-                <a className="work-item__link" href="https://www.redventures.com/" 
-                target="_blank">Website</a>
+                <a className="work-item__link" href="https://www.redventures.com/"
+                  target="_blank">Website</a>
               </div>
             </div>
             <span className="work-item__border"></span>
@@ -33,7 +51,7 @@ export function WorkSection() {
               <ul>
                 <li>
                   <p className="work-item__job">Frontend Developer</p>
-                  <p className="work-item__dates">2016 - 2017</p>
+                  <p className="work-item__dates">May 2016 - Nov. 2017</p>
                 </li>
               </ul>
               <div className="work-item__buttons">
@@ -50,7 +68,7 @@ export function WorkSection() {
               <ul>
                 <li>
                   <p className="work-item__job">Web Developer</p>
-                  <p className="work-item__dates">2014 - 2016</p>
+                  <p className="work-item__dates">Dec. 2014 - May 2016</p>
                 </li>
               </ul>
               <div className="work-item__buttons">
@@ -69,7 +87,7 @@ export function WorkSection() {
               <ul>
                 <li>
                   <p className="work-item__job">Web Developer</p>
-                  <p className="work-item__dates">2013 - 2014</p>
+                  <p className="work-item__dates">Oct. 2013 - Dec. 2014</p>
                 </li>
               </ul>
               <div className="work-item__buttons">
