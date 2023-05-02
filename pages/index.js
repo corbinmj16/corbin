@@ -39,9 +39,11 @@ export default function Home() {
         <Hero />
       </header>
 
-      <SkillsSection />
-      <ProjectSection />
-      <WorkSection />
+      <main>
+        <SkillsSection />
+        <ProjectSection />
+        <WorkSection />
+      </main>
 
       <Footer />
     </div>
