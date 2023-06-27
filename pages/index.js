@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Corbin Jensen's Portfolio</title>
-        <meta name="description" content="Corbin Jensen is a Frontend Developer and this is his portfolio website. He's a frontend developer in the Charlotte, NC area." />
+        <meta name="description" content="Corbin Jensen is a Frontend Developer and this is his portfolio website. He's a frontend developer in the Savannah, Georgia area." />
         <Favicons />
       </Head>
 

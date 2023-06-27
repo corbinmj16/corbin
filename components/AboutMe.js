@@ -7,7 +7,7 @@ export function AboutMe() {
       </div>
 
       <div className="about__content">
-        <p>Over the past 8 years, I've worked with a diverse range of companies, from small digital agencies to big companies with 3000+ employees. I enjoy developing interfaces that delight users and help businesses grow.</p>
+        <p>Over the past 9+ years, I've worked with a diverse range of companies, from small digital agencies to big companies with 3000+ employees. I enjoy developing interfaces that delight users and help businesses grow.</p>
       </div>
     </div>
   );

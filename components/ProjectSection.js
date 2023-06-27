@@ -72,7 +72,6 @@ export function ProjectSection() {
               <p className="project__desc">This is a POC for an order-request system to improve efficiency in a factory my father-in-law runs. This is built with React/Next.js, Supabase (database) and Tailwind.</p>
               <div className="project__buttons">
                 <a className="project__link" href="https://github.com/corbinmj16/step-change-requests" target="_blank">Github</a>
-                <a className="project__link" href="https://step-change-requests.vercel.app/" target="_blank">Website</a>
               </div>
             </div>
           </li>
