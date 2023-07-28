@@ -12,7 +12,7 @@ export function Hero() {
         <p>
           Hi! I'm Corbin and I enjoy developing tools that make getting things
           done easier. My programming language of choice is Javascript and
-          framework of choice React.
+          I enjoy both Vue and React frameworks.
         </p>
         <div className="hero__buttons">
           <a href="#projects" className="btn no-underline">
