@@ -5,7 +5,29 @@ export function WorkSection() {
         <h2>💼 Work Experience</h2>
         <ul className="work">
           <li className="work-item">
-            <img className="work-item__logo" src="Alto.svg" style={{ backgroundColor: '#0c6b5b' }}/>
+            <img className="work-item__logo" src="dealer_tire_logo.jpeg" style={ { backgroundColor: '#5c2e7c' } } />
+            <div className="work-item__content">
+              <h4 className="work-item__company">Dealer Tire</h4>
+              <ul>
+                <li>
+                  <p className="work-item__job">Senior Frontend Developer</p>
+                  <p className="work-item__dates">June 2023 - Current</p>
+                </li>
+              </ul>
+              <div className="work-item__buttons">
+                <a className="work-item__link"
+                   href="https://www.linkedin.com/company/dealer-tire/mycompany/verification/"
+                   target="_blank"
+                >LinkedIn</a>
+                <a className="work-item__link" href="https://www.dealertire.com/"
+                   target="_blank"
+                >Website</a>
+              </div>
+            </div>
+            <span className="work-item__border"></span>
+          </li>
+          <li className="work-item">
+            <img className="work-item__logo" src="Alto.svg" style={ { backgroundColor: '#0c6b5b' } } />
             <div className="work-item__content">
               <h4 className="work-item__company">Alto</h4>
               <ul>
@@ -15,9 +37,13 @@ export function WorkSection() {
                 </li>
               </ul>
               <div className="work-item__buttons">
-                <a className="work-item__link" href="https://www.linkedin.com/company/altoira/mycompany/" target="_blank">LinkedIn</a>
+                <a className="work-item__link"
+                   href="https://www.linkedin.com/company/altoira/mycompany/"
+                   target="_blank"
+                >LinkedIn</a>
                 <a className="work-item__link" href="https://www.altoira.com/"
-                  target="_blank">Website</a>
+                   target="_blank"
+                >Website</a>
               </div>
             </div>
             <span className="work-item__border"></span>
@@ -37,9 +63,13 @@ export function WorkSection() {
                 </li>
               </ul>
               <div className="work-item__buttons">
-                <a className="work-item__link" href="https://www.linkedin.com/company/red-ventures/mycompany/" target="_blank">LinkedIn</a>
+                <a className="work-item__link"
+                   href="https://www.linkedin.com/company/red-ventures/mycompany/"
+                   target="_blank"
+                >LinkedIn</a>
                 <a className="work-item__link" href="https://www.redventures.com/"
-                  target="_blank">Website</a>
+                   target="_blank"
+                >Website</a>
               </div>
             </div>
             <span className="work-item__border"></span>
@@ -72,7 +102,10 @@ export function WorkSection() {
                 </li>
               </ul>
               <div className="work-item__buttons">
-                <a className="work-item__link" href="https://www.linkedin.com/company/tag-communications/" target="_blank">LinkedIn</a>
+                <a className="work-item__link"
+                   href="https://www.linkedin.com/company/tag-communications/"
+                   target="_blank"
+                >LinkedIn</a>
                 <a className="work-item__link" href="https://tagteamagency.com/" target="_blank">
                   Website
                 </a>
@@ -91,7 +124,10 @@ export function WorkSection() {
                 </li>
               </ul>
               <div className="work-item__buttons">
-                <a className="work-item__link" href="https://www.linkedin.com/company/lee-enterprises/" target="_blank">LinkedIn</a>
+                <a className="work-item__link"
+                   href="https://www.linkedin.com/company/lee-enterprises/"
+                   target="_blank"
+                >LinkedIn</a>
                 <a className="work-item__link" href="https://lee.net/" target="_blank">
                   Website
                 </a>
