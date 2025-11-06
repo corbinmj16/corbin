@@ -13,15 +13,14 @@ export function ProjectSection() {
           <li className="project">
             <div
                 className="project__image"
-                style={ { backgroundImage: `url('born_again_logo.jpg'); background-color: #fff` } }
+                style={ { backgroundImage: `url('dt_logo_white.png'); background-color: #0dace3` } }
             ></div>
             <div className="project__content">
-              <h5 className="font-gradient project__category">Personal</h5>
-              <h3 className="project__title">Born Again</h3>
-              <p className="project__desc">A personal project that allows for compiling and sharing Christian resources that have helped people grow in their faith. Users have the ability to save books, podcasts, sermons, etc. to their profile, following others and discover new resources.</p>
-              <p>Built with Laravel, Vue and MySQL</p>
+              <h5 className="font-gradient project__category">Career</h5>
+              <h3 className="project__title">Dealer Tire</h3>
+              <p className="project__desc">I've helped build out the Online Tire Store and build internal applications to assist Dealerships in accomplishing tasks.</p>
               <div className="project__buttons">
-                <a className="project__link" href="https://bornagain.app" target="_blank">Website</a>
+                <a className="project__link" href="https://www.dealertire.com/" target="_blank">Website</a>
               </div>
             </div>
           </li>

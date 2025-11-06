@@ -6,7 +6,7 @@ export function Hero() {
     <section className="hero container">
       <div className="hero__content">
         <h1 className="hero__title">
-          <span className="font-gradient">Senior frontend developer</span> with 9+
+          <span className="font-gradient">Senior Software Engineer</span> with 10+
           years experience.
         </h1>
         <p>
